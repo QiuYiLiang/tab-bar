@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+#tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.active {
+  background-color: #f2f2f2 !important;
+}
+
+img {
+  height: 18px;
+  width: 18px;
+  padding: 6px;
+  border-radius: 12px;
+  margin: 4px;
+  cursor: pointer;
+}

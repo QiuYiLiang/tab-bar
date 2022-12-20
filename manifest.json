@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "标签栏",
+  "description": "全屏标签栏",
+  "author": "QiuYiLiang",
+  "version": "0.1",
+  "permissions": ["tabs"],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "web_accessible_resources": ["tabs.html"]
+}
